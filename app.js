@@ -25,16 +25,16 @@ if (typeof process.env.TELEGRAF_HOST != 'undefined') {
         let m = {};
 
         if (fast_com_result != null)
-            m["fast_download"] = telegraf.Float(fast_com_result);
+            m["fast_download"] = new telegraf.Float(fast_com_result);
         if (speedtest_net_result != null){
-            m["ookla_download"] = telegraf.Float(speedtest_net_result['speeds']['download']);
-            m["ookla_upload"] = telegraf.Float(speedtest_net_result['speeds']['upload']);
-            m["ookla_ping"] = telegraf.Float(speedtest_net_result['server']['ping']);
-            m["ookla_distance"] = telegraf.Float(speedtest_net_result['server']['distance']);
+            m["ookla_download"] = new telegraf.Float(speedtest_net_result['speeds']['download']);
+            m["ookla_upload"] = new telegraf.Float(speedtest_net_result['speeds']['upload']);
+            m["ookla_ping"] = new telegraf.Float(speedtest_net_result['server']['ping']);
+            m["ookla_distance"] = new telegraf.Float(speedtest_net_result['server']['distance']);
         }
 
         let m1 = new telegraf.Measurement(
-            "fast-speedtest",
+            "speedtest",
             tags,
             m
         );

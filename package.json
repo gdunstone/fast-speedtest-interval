@@ -1,13 +1,14 @@
 {
-  "name": "fast-speedtest",
-  "version": "1.0.0",
-  "description": "interval fast speedtest",
+  "name": "multi-speedtest",
+  "version": "1.1.0",
+  "description": "interval multi speedtest",
+  "repository": "https://github.com/gdunstone/multi-speedtest",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Gareth Dunstone, others",
+  "license": "MPL",
   "dependencies": {
     "fast-speedtest-api": "^0.3.1",
     "speedtest-net": "^1.4.4",

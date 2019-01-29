@@ -1,7 +1,5 @@
 FROM resin/raspberry-pi-node:latest
 
-ENV TOKEN ""
-
 WORKDIR /usr/src/app
 
 COPY package.json package.json
