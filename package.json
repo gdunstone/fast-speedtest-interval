@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "fast-speedtest-api": "^0.3.1",
+    "speedtest-net": "^1.4.4",
     "telegrafjs": "^0.1.3"
   }
 }
