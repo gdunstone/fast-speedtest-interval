@@ -1,0 +1,15 @@
+{
+  "name": "fast-speedtest",
+  "version": "1.0.0",
+  "description": "interval fast speedtest",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-speedtest-api": "^0.3.1",
+    "telegrafjs": "^0.1.3"
+  }
+}
